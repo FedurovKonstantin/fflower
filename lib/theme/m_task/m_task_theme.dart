@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MTaskThemeData {
@@ -19,7 +18,7 @@ class MTaskThemeData {
           uncheckedTextStyle: const TextStyle(
             fontSize: 21,
           ),
-          checkBoxScale: 1.3,
+          checkBoxScale: 1.25,
         );
 
   MTaskThemeData._({

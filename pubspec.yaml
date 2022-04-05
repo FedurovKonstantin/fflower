@@ -11,12 +11,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  freezed_annotation: ^1.1.0
   cupertino_icons: ^1.0.2
+  floor: ^1.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  floor_generator: ^1.2.0
+  build_runner: ^2.1.8
 
   flutter_lints: ^1.0.0
 

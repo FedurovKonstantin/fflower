@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class FABThemeData {
+class MFABThemeData {
   final Color backgroundColor;
   final Color iconColor;
 
-  FABThemeData()
+  MFABThemeData()
       : this._(
           Colors.black,
           Colors.white,
         );
 
-  FABThemeData._(
+  MFABThemeData._(
     this.backgroundColor,
     this.iconColor,
   );

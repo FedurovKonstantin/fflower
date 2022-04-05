@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MTheme(
-        data: MThemeData(),
-        child: TasksPage(),
+      home: SafeArea(
+        child: MTheme(
+          data: MThemeData(),
+          child: TasksPage(),
+        ),
       ),
     );
   }

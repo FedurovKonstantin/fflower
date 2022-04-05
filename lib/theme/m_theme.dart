@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
-import 'package:fminimal/theme/fab_theme.dart';
-import 'package:fminimal/theme/task_theme.dart';
+import 'package:fminimal/theme/m_fab/m_fab_theme.dart';
+import 'package:fminimal/theme/m_task/m_task_theme.dart';
 
 class MThemeData {
-  final TaskThemeData taskTheme;
-  final FABThemeData fabTheme;
+  final MTaskThemeData taskTheme;
+  final MFABThemeData fabTheme;
 
   MThemeData()
       : this._(
-          TaskThemeData(),
-          FABThemeData(),
+          MTaskThemeData(),
+          MFABThemeData(),
         );
 
   MThemeData._(this.taskTheme, this.fabTheme);

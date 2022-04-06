@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fminimal/scenes/tasks/tasks_page.dart';
 import 'package:fminimal/theme/m_theme.dart';
+import 'package:fminimal/utils/route_generator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SafeArea(
-        child: MTheme(
-          data: MThemeData(),
-          child: TasksPage(),
-        ),
+    return MTheme(
+      data: MThemeData(),
+      child: const MaterialApp(
+        onGenerateRoute: RouteGenerator.onGenerateRoute,
       ),
     );
   }

@@ -1,18 +1,22 @@
-import 'package:flutter/cupertino.dart';
 import 'package:fminimal/theme/m_fab/m_fab_theme.dart';
 import 'package:fminimal/theme/m_task/m_task_theme.dart';
+import 'package:flutter/material.dart';
 
 class MThemeData {
   final MTaskThemeData taskTheme;
   final MFABThemeData fabTheme;
+  final Color backgroundColor;
+  final Color primaryColor;
+  final Color onPrimaryColor;
+  final Color errorColor;
 
   MThemeData()
-      : this._(
-          MTaskThemeData(),
-          MFABThemeData(),
-        );
-
-  MThemeData._(this.taskTheme, this.fabTheme);
+      : taskTheme = MTaskThemeData(),
+        fabTheme = MFABThemeData(),
+        backgroundColor = const Color(0xffFFFBFE),
+        primaryColor = const Color(0xff6750A4),
+        onPrimaryColor = Colors.white,
+        errorColor = Color(0xffB3261E);
 }
 
 class MTheme extends InheritedWidget {
